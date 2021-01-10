@@ -1,7 +1,7 @@
 Package: dtkit
 Type: Package
 Title: Utility functions for data.table
-Version: 0.1
+Version: 0.0.1
 Date: 2021-01-10
 Author@R: c(
   person("Xianying", "Tan", email = "shrektan@126.com", role = c("aut", "cre"))
@@ -18,5 +18,5 @@ Encoding: UTF-8
 ByteCompile: TRUE
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-Suggests: 
+Suggests:
     testthat
