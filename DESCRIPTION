@@ -16,3 +16,5 @@ Imports:
     data.table
 Encoding: UTF-8
 ByteCompile: TRUE
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
