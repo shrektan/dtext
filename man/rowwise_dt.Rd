@@ -22,8 +22,9 @@ specifying a row-by-row layout. It's convenient and highly readable when
 the table is small.
 }
 \note{
-This function has been filed to data.table as a
-\href{https://github.com/Rdatatable/data.table/pull/4291}{pull request}.
+This function has been filed to data.table in
+\href{https://github.com/Rdatatable/data.table/pull/4291}{PR#4291}, where the function
+name is \code{rowwiseDT}.
 }
 \examples{
  rowwise_dt(
