@@ -64,11 +64,10 @@ assert_unique <- function(x) {
 #'  the key columns of `x` to decide duplication. See [data.table::duplicated()]
 #'  for more info.
 #' @param only.key When `TRUE` and `x` has key, only the key columns are returned.
-#' @param ... Other arguments be passed to [data.table::duplicated()].
 #' @note When `x` has keys, the duplicateness is dependes on the key columns only.
 #' @return The duplicated records of `x`.
 #' @export
-get_duplicates <- function(x, only.key = FALSE, by = key(x), ...) {
+get_duplicates <- function(x, only.key = FALSE, by = key(x)) {
   cols <- if (haskey(x) && only.key) key(x) else colnames(x)
   dup <- duplicated(x, by = by, fromLast = FALSE) | duplicated(x, by = by, fromLast = TRUE)
   x[dup, cols, with = FALSE]

@@ -4,7 +4,7 @@
 \alias{get_duplicates}
 \title{Find the duplicates}
 \usage{
-get_duplicates(x, only.key = FALSE, by = key(x), ...)
+get_duplicates(x, only.key = FALSE, by = key(x))
 }
 \arguments{
 \item{x}{a \code{data.table} object}
@@ -14,8 +14,6 @@ get_duplicates(x, only.key = FALSE, by = key(x), ...)
 \item{by}{The columns used for uniqueness checks. By default, it only relies on
 the key columns of \code{x} to decide duplication. See \code{\link[data.table:duplicated]{data.table::duplicated()}}
 for more info.}
-
-\item{...}{Other arguments be passed to \code{\link[data.table:duplicated]{data.table::duplicated()}}.}
 }
 \value{
 The duplicated records of \code{x}.
