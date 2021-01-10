@@ -11,9 +11,9 @@ Description: Some useful but missing functions for data.table.
 URL: https://github.com/shrektan/dtkit
 BugReports: https://github.com/shrektan/dtkit/issues
 License: MIT + file LICENSE
-Depends: R (>= 3.1.0)
+Depends: R (>= 3.4.0)
 Imports:
-    data.table
+    data.table (>= 1.13.0)
 Encoding: UTF-8
 ByteCompile: TRUE
 Roxygen: list(markdown = TRUE)
