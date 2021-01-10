@@ -70,5 +70,6 @@ assert_unique <- function(x) {
 #' @export
 get_duplicates <- function(x, only.key = FALSE, by = key(x), ...) {
   cols <- if (haskey(x) && only.key) key(x) else colnames(x)
-  x[duplicated(x, by = by), cols, with = FALSE]
+  dup <- duplicated(x, by = by, fromLast = FALSE) | duplicated(x, by = by, fromLast = TRUE)
+  x[dup, cols, with = FALSE]
 }
