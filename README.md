@@ -2,6 +2,7 @@
 
 <!-- badges: start -->
 [![Codecov test coverage](https://codecov.io/gh/shrektan/dtkit/branch/master/graph/badge.svg)](https://codecov.io/gh/shrektan/dtkit?branch=master)
+[![R build status](https://github.com/shrektan/dtkit/workflows/R-CMD-check/badge.svg)](https://github.com/shrektan/dtkit/actions)
 <!-- badges: end -->
 
 This package provides some useful helper functions to work with [data.table](http://r-datatable.com).
