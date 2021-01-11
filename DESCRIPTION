@@ -3,9 +3,9 @@ Type: Package
 Title: Utility functions for data.table
 Version: 0.0.1
 Date: 2021-01-10
-Author@R: c(
-  person("Xianying", "Tan", email = "shrektan@126.com", role = c("aut", "cre"))
-  )
+Authors@R: c(
+    person("Xianying", "Tan", email = "shrektan@126.com", role = c("aut", "cre"))
+    )
 Maintainer: Xianying Tan <shrektan@126.com>
 Description: Some useful but missing functions for data.table.
 URL: https://github.com/shrektan/dtkit
