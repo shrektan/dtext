@@ -54,7 +54,7 @@ assert_no_na_in_key <- function(x) {
 assert_unique <- function(x) {
   assert_dt(x)
   if (!identical(anyDuplicated(x, by = key(x)), 0L))
-    stop("x contains duplicates, run `get_duplicates()` to see the values")
+    stop("x contains duplicates, run `dtkit::get_duplicates()` to see the values")
   invisible(x)
 }
 
