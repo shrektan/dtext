@@ -12,12 +12,14 @@
 #'  cat("Finished in",time_taken(),"\n")
 #' @export
 time_taken <- local({
-  last_proc_time <- NULL
+  proc_time <- NULL
   function(reset = FALSE) {
-    if (reset || is.null(last_proc_time)) {
-      last_proc_time <<- base::proc.time()
-    } else {
+    last_proc_time <- proc_time
+    proc_time <<- base::proc.time()
+    if (isFALSE(reset) && !is.null(last_proc_time)) {
       timetaken(last_proc_time)
+    } else {
+      invisible(proc_time)
     }
   }
 })
