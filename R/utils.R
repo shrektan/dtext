@@ -1,6 +1,6 @@
 #' Convinient Time Taken
 #'
-#' Compared to [data.table::timetake()], this version doesn't require the user
+#' Compared to [data.table::timetaken()], this version doesn't require the user
 #' to store the value of [base::proc.time()] explicitly. Instead, the first call in a
 #' new session will store the value of proc.time automatically. Or you can call the
 #' function with param `TRUE` to reset the stored proc.time value, afterwards.

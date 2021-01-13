@@ -10,7 +10,7 @@ time_taken(reset = FALSE)
 \item{reset}{When \code{TRUE}, it resets the clock.}
 }
 \description{
-Compared to \code{\link[data.table:timetake]{data.table::timetake()}}, this version doesn't require the user
+Compared to \code{\link[data.table:timetaken]{data.table::timetaken()}}, this version doesn't require the user
 to store the value of \code{\link[base:proc.time]{base::proc.time()}} explicitly. Instead, the first call in a
 new session will store the value of proc.time automatically. Or you can call the
 function with param \code{TRUE} to reset the stored proc.time value, afterwards.
