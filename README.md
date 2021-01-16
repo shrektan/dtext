@@ -1,7 +1,7 @@
 # Kit for data.table
 
 <!-- badges: start -->
-[![Codecov test coverage](https://codecov.io/gh/shrektan/dtkit/branch/master/graph/badge.svg)](https://codecov.io/gh/shrektan/dtkit?branch=master)
+[![Codecov test coverage](https://codecov.io/gh/shrektan/dtkit/branch/main/graph/badge.svg)](https://codecov.io/gh/shrektan/dtkit?branch=master)
 [![R build status](https://github.com/shrektan/dtkit/workflows/R-CMD-check/badge.svg)](https://github.com/shrektan/dtkit/actions)
 <!-- badges: end -->
 
