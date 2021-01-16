@@ -23,3 +23,7 @@ time_taken <- local({
     }
   }
 })
+
+#' The NA value of the Date Class
+#' @export
+NA_date_ <- structure(NA_real_, class = "Date")
