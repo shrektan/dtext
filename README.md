@@ -1,4 +1,4 @@
-# Kit for data.table
+# data.table Extensions
 
 <!-- badges: start -->
 [![Codecov test coverage](https://codecov.io/gh/shrektan/dtext/branch/main/graph/badge.svg)](https://codecov.io/gh/shrektan/dtext?branch=master)
