@@ -24,6 +24,33 @@ time_taken <- local({
   }
 })
 
-#' The NA value of the Date Class
+#' The NA value with the Date / Date-Time Class
 #' @export
 NA_date_ <- structure(NA_real_, class = "Date")
+
+#' @rdname NA_date_
+#' @export
+NA_datetime_ <- structure(NA_real_, class = c("POSIXct", "POSIXt"))
+
+#' Restore back to R Date
+#'
+#' Calling R functions like `ifelse()` may accidentally convert a Date vector
+#' to a numeric vector, due to losing the class attributes. This helper function
+#' enables you to restore the numeric vector back to R Date.
+#'
+#' @param x the numeric values behind the Date value, which is the number of days
+#'   since 1970-01-01, with negative values for earlier dates.
+#'
+#' @examples
+#'  r_date(18262)
+#'
+#' @export
+r_date <- function(x) {
+  if (!is.numeric(x)) x <- as.numeric(x)
+  structure(x, class = "Date")
+}
+
+r_datetime <- function(x) {
+  if (!is.numeric(x)) x <- as.numeric(x)
+  structure(x, class = c("POSIXct", "POSIXt"))
+}
