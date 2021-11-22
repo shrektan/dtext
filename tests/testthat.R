@@ -1,5 +1,5 @@
 library(testthat)
 library(data.table)
-library(dtkit)
+library(dtext)
 
-test_check("dtkit")
+test_check("dtext")

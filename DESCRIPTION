@@ -1,4 +1,4 @@
-Package: dtkit
+Package: dtext
 Type: Package
 Title: Utility functions for data.table
 Version: 0.0.1
@@ -8,8 +8,8 @@ Authors@R: c(
     )
 Maintainer: Xianying Tan <shrektan@126.com>
 Description: Some useful but missing functions for data.table.
-URL: https://github.com/shrektan/dtkit
-BugReports: https://github.com/shrektan/dtkit/issues
+URL: https://github.com/shrektan/dtext
+BugReports: https://github.com/shrektan/dtext/issues
 License: MIT + file LICENSE
 Depends: R (>= 3.4.0)
 Imports:
